@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <title>Khmer Lyrics Print</title>
+  <style>
+    @page {
+      size: A4 landscape;
+      margin: 2cm;
+    }
+
+    body {
+      font-family: 'Noto Sans Khmer', 'Khmer OS Content', 'Khmer OS', sans-serif;
+      font-size: 24pt;
+      line-height: 2.2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .text-block {
+      text-align: left;
+      max-width: 70%;
+    }
+
+    .text-block div {
+      margin-bottom: 1.5em;
+    }
+
+    /* 🎵 Pitch-based color styles */
+    .low  { color: #003366; }   /* Dark Blue */
+    .mid  { color: #006400; }   /* Forest Green */
+    .high { color: orange; }
+    .top  { color: red; }
+
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="text-block">
+      <div>
+        <span class="mid">នេះហ្នឹងហើយថ្លាថ្លែង</span>
+        <span class="low">ស្ដែងចែកជូនញាតិទស្សនា</span>
+      </div>
+      <div>
+        <span class="high">សិល្បៈចាប៉ីពីដូន</span>
+        <span class="low">តា</span>
+      </div>
+      <div>លើកយកមកសម្ដែងចែកជូនញាតិប្រុសស្រី</div>
+      <div>ប៉ុន្តែមុននឹងលើកយករឿងមកនិទានខ្ញុំឯនេះក៏សុំទោសខន្តី។</div>
+      <div>ក្រែងមានពាក្យណាមិនសមគ្រប់មិនសមគប្បី</div>
+      <div>ថាទៅត្រូវចិត្តបងប្រុសៗ វា បែរខុសចន្លោះចិត្តបងស្រីៗ</div>
+    </div>
+  </div>
+</body>
+</html>
